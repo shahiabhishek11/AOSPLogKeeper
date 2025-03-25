@@ -4,8 +4,8 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := aosp_logs_keeper_lib
 
-LOCAL_SRC_FILES := \
-		Diagnostics.cpp
+LOCAL_SRC_FILES := src/Diagnostics.cpp
+
 		
 LOCAL_SHARED_LIBRARIES := \
 	libbinder \
@@ -29,8 +29,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_MODULE := aosp_logs_keeper_service
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := \
-	main.cpp
+LOCAL_SRC_FILES := src/main.cpp
 	
 LOCAL_SHARED_LIBRARIES := \
 	libbinder \
